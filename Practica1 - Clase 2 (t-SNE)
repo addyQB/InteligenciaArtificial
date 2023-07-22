@@ -1,0 +1,21 @@
+from sklearn.datasets import load_digits
+from sklearn.manifold import TSNE
+import matplotlib.pyplot as plt
+
+# Load Digits dataset
+data = load_digits()
+X, y = data.data, data.target
+
+from sklearn.manifold import TSNE
+
+# Apply t-SNE for dimensionality reduction
+tsne = TSNE(n_components=2, random_state=42)
+X_tsne = tsne.fit_transform(X)
+
+# Plot the reduced data
+plt.scatter(X_tsne[:, 0], X_tsne[:, 1], c=y, cmap='viridis')
+plt.xlabel('t-SNE Component 1')
+plt.ylabel('t-SNE Component 2')
+plt.title('t-SNE - datasets')
+plt.colorbar()
+plt.show()
