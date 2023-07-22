@@ -1,0 +1,48 @@
+#Ejercicio 1
+Numero = int(input())
+if Numero%2 == 0 :
+  print('Par')
+
+else:
+  print('Impar')
+
+
+
+#Ejercicio 2
+frase = "Me llamo Addy Quiroz"
+len(frase.split())
+
+
+
+#Ejercicio 3
+mi_usuario= {
+    "Addy": {"usr": 'addy', "psw": 123,},
+    "Luis": {"usr": 'luis', "psw": 456,},
+    "Laura": {"usr": 'laura', "psw": 789,},
+  }
+
+
+usuario = input("Inroduce tu usuario: ")
+if usuario.title() in mi_usuario:
+  print("Usuario correcto")
+  contrasena = input("Contraseña: ")
+else:
+  print("usuario invalido")
+
+if contrasena in mi_usuario:
+  print("Bienvenido")
+else:
+  print("Contraseña Invalida")
+
+
+#Ejercicio 4
+mi_lista= [1, 2, 3, 4]
+mi_lista.reverse()
+mi_lista
+
+
+
+#Ejercicio 5
+
+
+
