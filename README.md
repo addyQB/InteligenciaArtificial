@@ -1,2 +1,0 @@
-# InteligenciaArtificial
-Curso de Fime
